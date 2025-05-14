@@ -168,7 +168,7 @@ Node* DFS(Node* initial, int* cont)
     Node *current = top(s);
     pop(s);
 
-    (*cont ++);
+    (*cont )++;
 
     if (is_final(current))return current;
 
