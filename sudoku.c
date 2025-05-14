@@ -177,12 +177,13 @@ Node* DFS(Node* initial, int* cont)
     List* adjacentes = get_adj_nodes(current);
 
     Node * adjNod = first(adjacentes);
-    while (adjNod == NULL)
+    while (adjNod != NULL)
     {
       push(s, adjNod);
       adjNod = next(adjacentes);
     }
 
+    free(current);
 
   }
 
