@@ -60,3 +60,14 @@ Wed, May 14, 2025 10:57:10 AM:
  tests:  7|1
 total_score: 55/70
 ece5c44
+Wed, May 14, 2025 11:08:23 AM: 
+ sudoku.c | 29 ++++++++++++++++++++++++++++-
+ 1 file changed, 28 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:171:6: error: value computed is not used [-Werror=unused-value]
+     (*cont ++);
+     ~^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+c778c57
