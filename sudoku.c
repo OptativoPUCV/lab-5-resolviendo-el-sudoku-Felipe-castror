@@ -65,15 +65,15 @@ int is_valid(Node* n)
 
   for (int j = 0 ; j < 9; j++)
   {
-    int col[10] = {0};
+    int columna[10] = {0};
     for (int i = 0; i< 9; i++)
     {
       int num = n->sudo[i][j];
       if (num != 0)
       {
-        if (col[num] == 1)return 0;
+        if (columna[num] == 1)return 0;
 
-        col[num] = 1;
+        columna[num] = 1;
       }
 
 
@@ -89,7 +89,7 @@ int is_valid(Node* n)
     for (int p = 0; p < 9; p++) 
     {
       int i = FilaC + (p / 3); 
-      int j = ColumnaC + (p % 3); 
+      int j = columna + (p % 3); 
       int num = n->sudo[i][j];
       if (num != 0)
       {

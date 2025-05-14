@@ -14,3 +14,18 @@ Wed, May 14, 2025 10:26:46 AM:
  tests:  5|3
 total_score: 35/70
 8ffd8a1
+Wed, May 14, 2025 10:27:01 AM: 
+ sudoku.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:92:15: error: 'columna' undeclared (first use in this function)
+       int j = columna + (p % 3);
+               ^~~~~~~
+sudoku.c:92:15: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:87:9: error: unused variable 'ColumnaC' [-Werror=unused-variable]
+     int ColumnaC = 3 * (k % 3);
+         ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+f02ec8a
